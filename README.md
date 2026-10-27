@@ -120,7 +120,7 @@ That is deliberate: the bar always accounts for all three providers.
 | Host | Version | Status |
 |---|---|---|
 | Web (`dsh web`) | `0.2.1-rc.3` | Verified 2026-10-26 |
-| Desktop | `0.2.1-rc.2` | Not verified; the same client bundle is used |
+| Desktop | `0.2.1-rc.2` | Installed and confirmed working by the owner (2026-10-27) |
 | Other versions | | Unverified |
 
 The package declares no official dependencies; it resolves them from the
