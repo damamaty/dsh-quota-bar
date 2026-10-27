@@ -2,6 +2,10 @@
 
 <p align="center">All of your z.ai, DeepSeek, and OpenCode Go quota in one compact footer line.</p>
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/dsh-quota-bar"><img alt="npm version" src="https://img.shields.io/npm/v/dsh-quota-bar.svg"></a>
+</p>
+
 A DSH plugin that adds a persistent status bar under the workspace. It shows
 what is left on each provider at the same time, so you do not have to open
 three dashboards or switch models to compare them.
@@ -37,8 +41,13 @@ returns focus to the bar.
 
 ### DSH Desktop
 
-Open **Plugins → Install** in the app and paste the absolute path to this
-checkout:
+Open **Plugins → Install** in the app and paste:
+
+```text
+dsh-quota-bar
+```
+
+The local checkout path works too, for development:
 
 ```text
 /path/to/dsh-quota-bar
@@ -48,6 +57,12 @@ Enable the bundle when the install finishes. Desktop has its own profile, so a
 web install does not appear in Desktop and vice versa.
 
 ### Web
+
+From npm:
+
+```sh
+dsh plugin --profile web add dsh-quota-bar
+```
 
 From a local checkout:
 
@@ -60,8 +75,6 @@ From GitHub:
 ```sh
 dsh plugin --profile web add "github:damamaty/dsh-quota-bar"
 ```
-
-Once the package is published to npm, the spec is just `dsh-quota-bar`.
 
 Restart `dsh web` after installing a bundle. If `dsh` is not on `PATH`, use the
 **Manage dsh Command** entry in the Desktop app first.
@@ -155,7 +168,8 @@ change.
 
 ## Source
 
-[github.com/damamaty/dsh-quota-bar](https://github.com/damamaty/dsh-quota-bar)
+- npm: [npmjs.com/package/dsh-quota-bar](https://www.npmjs.com/package/dsh-quota-bar)
+- GitHub: [github.com/damamaty/dsh-quota-bar](https://github.com/damamaty/dsh-quota-bar)
 
 ## License
 
