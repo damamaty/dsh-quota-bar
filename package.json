@@ -1,0 +1,52 @@
+{
+  "name": "dsh-quota-bar",
+  "version": "0.1.0",
+  "description": "A compact footer bar with z.ai, DeepSeek, and OpenCode Go quota and balance, all visible at once.",
+  "license": "MIT",
+  "type": "module",
+  "icon": "./icon.svg",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "docs/*.png"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "quota",
+    "zai",
+    "deepseek",
+    "opencode"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damamaty/dsh-quota-bar.git"
+  },
+  "homepage": "https://github.com/damamaty/dsh-quota-bar",
+  "bugs": {
+    "url": "https://github.com/damamaty/dsh-quota-bar/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}

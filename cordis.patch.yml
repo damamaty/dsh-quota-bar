@@ -1,0 +1,5 @@
+# The quota bar bundle: one Host row. The browser half rides the same row
+# through dsh.client in package.json.
+- insert:
+    - id: quota-bar
+      name: 'dsh-quota-bar'
